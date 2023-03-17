@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+  background-color: #d6e2f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 550px) {
+  body {
+    height: auto;
+  }
+}
+
+main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media only screen and (max-width: 800px) {
+  main {
+    height: auto;
+  }
+}
+main section {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media only screen and (max-width: 800px) {
+  main section {
+    margin: 100px 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 801px) {
+  main section {
+    width: 750px;
+  }
+}
+main section .offer {
+  grid-column: span 2;
+  padding: 50px;
+}
+@media only screen and (max-width: 800px) {
+  main section .offer {
+    padding: 25px;
+  }
+}
+main section .offer h1 {
+  font-size: 28px;
+  color: #2ab2af;
+  margin-bottom: 25px;
+}
+@media only screen and (max-width: 800px) {
+  main section .offer h1 {
+    font-size: 21px;
+  }
+}
+main section .offer h2 {
+  font-size: 21px;
+  color: #c0df34;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 800px) {
+  main section .offer h2 {
+    font-size: 16px;
+  }
+}
+main section .offer p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #a8acb9;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 800px) {
+  main section .offer p {
+    font-size: 13px;
+    line-height: 2;
+  }
+}
+main section .subs, main section .pros {
+  background-color: #2ab2af;
+  padding: 50px;
+  color: #fff;
+}
+@media only screen and (max-width: 800px) {
+  main section .subs, main section .pros {
+    padding: 25px;
+  }
+}
+main section .subs h2, main section .pros h2 {
+  margin-bottom: 30px;
+}
+main section .subs h2 + p, main section .pros h2 + p {
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+main section .subs h2 + p span, main section .pros h2 + p span {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  font-weight: initial;
+}
+@media only screen and (max-width: 800px) {
+  main section .subs h2, main section .pros h2 {
+    font-size: 19px;
+    margin-bottom: 20px;
+  }
+  main section .subs h2 + p, main section .pros h2 + p {
+    font-size: 34px;
+  }
+}
+main section .subs p:nth-of-type(2), main section .pros p:nth-of-type(2) {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.7803921569);
+}
+@media only screen and (max-width: 800px) {
+  main section .subs p:nth-of-type(2), main section .pros p:nth-of-type(2) {
+    font-size: 16px;
+  }
+}
+main section .subs button, main section .pros button {
+  background-color: #c0df34;
+  color: #fdffd9;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  padding: 20px;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+main section .subs button:hover, main section .pros button:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 800px) {
+  main section .subs button, main section .pros button {
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 16px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  }
+}
+main section .pros {
+  background-color: #4abebd;
+}
+main section .pros ul {
+  color: rgba(255, 255, 255, 0.7);
+}
+main section .pros ul li {
+  margin-bottom: 5px;
+}
+@media only screen and (max-width: 800px) {
+  main section .pros ul {
+    font-size: 15px;
+  }
+}
+
+footer {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+@media only screen and (max-width: 800px) {
+  footer {
+    bottom: auto;
+    top: 35px;
+  }
+}
+
+footer a {
+  color: #3e52a3;
+}/*# sourceMappingURL=main.css.map */
