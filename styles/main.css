@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;300;400;500;600;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Karla", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 a {
@@ -17,190 +17,205 @@ ul {
   list-style: none;
 }
 
-body {
+main {
   height: 100vh;
-  background-color: #d6e2f0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media only screen and (max-width: 550px) {
-  body {
-    height: auto;
-  }
-}
-
-main {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-@media only screen and (max-width: 800px) {
   main {
     height: auto;
   }
 }
 main section {
-  position: relative;
-  background-color: #fff;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  border-radius: 30px;
   overflow: hidden;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  box-shadow: 0 20px 50px rgba(16, 49, 182, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 550px) {
   main section {
-    margin: 100px 30px;
-    border-radius: 5px;
-    display: flex;
     flex-direction: column;
+    border-radius: 0;
+    box-shadow: none;
   }
 }
-@media only screen and (min-width: 801px) {
-  main section {
-    width: 750px;
+main section .result,
+main section .summary {
+  padding: 40px 50px;
+  align-self: stretch;
+}
+@media only screen and (max-width: 550px) {
+  main section .result,
+  main section .summary {
+    padding: 30px 40px;
   }
 }
-main section .offer {
-  grid-column: span 2;
-  padding: 50px;
-}
-@media only screen and (max-width: 800px) {
-  main section .offer {
-    padding: 25px;
-  }
-}
-main section .offer h1 {
-  font-size: 28px;
-  color: #2ab2af;
-  margin-bottom: 25px;
-}
-@media only screen and (max-width: 800px) {
-  main section .offer h1 {
-    font-size: 21px;
-  }
-}
-main section .offer h2 {
-  font-size: 21px;
-  color: #c0df34;
-  margin-bottom: 20px;
-}
-@media only screen and (max-width: 800px) {
-  main section .offer h2 {
-    font-size: 16px;
-  }
-}
-main section .offer p {
-  font-size: 18px;
-  font-weight: 500;
-  color: #a8acb9;
-  line-height: 1.5;
-}
-@media only screen and (max-width: 800px) {
-  main section .offer p {
-    font-size: 13px;
-    line-height: 2;
-  }
-}
-main section .subs, main section .pros {
-  background-color: #2ab2af;
-  padding: 50px;
+main section .result {
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 30px;
   color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
 }
-@media only screen and (max-width: 800px) {
-  main section .subs, main section .pros {
-    padding: 25px;
+@media only screen and (max-width: 550px) {
+  main section .result {
+    border-radius: 0 0 30px 30px;
   }
 }
-main section .subs h2, main section .pros h2 {
-  margin-bottom: 30px;
+main section .result h1 {
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: hsl(241, 100%, 89%);
 }
-main section .subs h2 + p, main section .pros h2 + p {
-  font-size: 40px;
-  font-weight: bold;
+main section .result .circle {
+  background: linear-gradient(to bottom, hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  width: 180px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50%;
+}
+main section .result .circle p {
+  font-size: 68px;
+  font-weight: 700;
+}
+main section .result .circle span {
+  font-size: 17px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.4);
+}
+main section .result h3 {
+  font-size: 31px;
+}
+main section .result > p {
+  color: hsl(241, 100%, 89%);
+  font-size: 18px;
+  max-width: 250px;
+}
+@media only screen and (max-width: 550px) {
+  main section .result > p {
+    max-width: 300px;
+  }
+}
+main section .summary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+main section .summary h2 {
+  align-self: flex-start;
+  color: hsl(224, 30%, 27%);
+}
+main section .summary .tabs {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 18px;
+  font-weight: 700;
+}
+main section .summary .tabs .tab {
+  padding: 15px;
+  color: hsl(224, 30%, 27%);
+  border-radius: 10px;
+  width: 310px;
+  display: flex;
+  justify-content: space-between;
+}
+main section .summary .tabs .tab:nth-child(1) {
+  background-color: #fff6f5;
+}
+main section .summary .tabs .tab:nth-child(1) .title {
   display: flex;
   align-items: center;
-  gap: 15px;
-  margin-bottom: 10px;
+  gap: 10px;
+  color: hsl(0, 100%, 67%);
 }
-main section .subs h2 + p span, main section .pros h2 + p span {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 16px;
-  font-weight: initial;
+main section .summary .tabs .tab:nth-child(1) .score {
+  color: hsla(224, 30%, 27%, 0.6);
 }
-@media only screen and (max-width: 800px) {
-  main section .subs h2, main section .pros h2 {
-    font-size: 19px;
-    margin-bottom: 20px;
-  }
-  main section .subs h2 + p, main section .pros h2 + p {
-    font-size: 34px;
-  }
+main section .summary .tabs .tab:nth-child(1) .score span {
+  color: hsl(224, 30%, 27%);
 }
-main section .subs p:nth-of-type(2), main section .pros p:nth-of-type(2) {
+main section .summary .tabs .tab:nth-child(2) {
+  background-color: #fffbf2;
+}
+main section .summary .tabs .tab:nth-child(2) .title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: hsl(39, 100%, 56%);
+}
+main section .summary .tabs .tab:nth-child(2) .score {
+  color: hsla(224, 30%, 27%, 0.6);
+}
+main section .summary .tabs .tab:nth-child(2) .score span {
+  color: hsl(224, 30%, 27%);
+}
+main section .summary .tabs .tab:nth-child(3) {
+  background-color: #f2fafa;
+}
+main section .summary .tabs .tab:nth-child(3) .title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: hsl(166, 100%, 37%);
+}
+main section .summary .tabs .tab:nth-child(3) .score {
+  color: hsla(224, 30%, 27%, 0.6);
+}
+main section .summary .tabs .tab:nth-child(3) .score span {
+  color: hsl(224, 30%, 27%);
+}
+main section .summary .tabs .tab:nth-child(4) {
+  background-color: #f3f3fd;
+}
+main section .summary .tabs .tab:nth-child(4) .title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: hsl(234, 85%, 45%);
+}
+main section .summary .tabs .tab:nth-child(4) .score {
+  color: hsla(224, 30%, 27%, 0.6);
+}
+main section .summary .tabs .tab:nth-child(4) .score span {
+  color: hsl(224, 30%, 27%);
+}
+main section .summary button {
+  background: hsl(224, 30%, 27%);
+  color: #fff;
+  font-family: inherit;
   font-size: 18px;
-  margin-bottom: 30px;
-  color: rgba(255, 255, 255, 0.7803921569);
-}
-@media only screen and (max-width: 800px) {
-  main section .subs p:nth-of-type(2), main section .pros p:nth-of-type(2) {
-    font-size: 16px;
-  }
-}
-main section .subs button, main section .pros button {
-  background-color: #c0df34;
-  color: #fdffd9;
-  font-weight: bold;
-  font-size: 18px;
-  border-radius: 10px;
+  font-weight: 600;
+  border-radius: 30px;
   border: none;
-  width: 100%;
-  padding: 20px;
   cursor: pointer;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s;
+  width: 100%;
+  padding: 15px 5px;
 }
-main section .subs button:hover, main section .pros button:hover {
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
-}
-@media only screen and (max-width: 800px) {
-  main section .subs button, main section .pros button {
-    border-radius: 5px;
-    padding: 15px;
-    font-size: 16px;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
-  }
-}
-main section .pros {
-  background-color: #4abebd;
-}
-main section .pros ul {
-  color: rgba(255, 255, 255, 0.7);
-}
-main section .pros ul li {
-  margin-bottom: 5px;
-}
-@media only screen and (max-width: 800px) {
-  main section .pros ul {
-    font-size: 15px;
-  }
+main section .summary button:hover {
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
 footer {
-  font-size: 11px;
+  font-size: 14px;
   text-align: center;
-  position: absolute;
-  bottom: 10px;
+  padding: 20px;
   width: 100%;
-}
-@media only screen and (max-width: 800px) {
-  footer {
-    bottom: auto;
-    top: 35px;
-  }
 }
 
 footer a {

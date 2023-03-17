@@ -1,13 +1,29 @@
 $white: #fff;
-$off_white: rgba(255, 255, 255, 0.7);
-$yellow: #c0df34;
-$btn_color: #fdffd9;
-$cyan: #2ab2af;
-$light_cyan: #4abebd;
-$light_gray: #d6e2f0;
-$grayish_blue: #7b879d;
-$dark_blue: #1f3251;
+$pale_blue: hsl(221, 100%, 96%);
+$dark_gray_blue: hsl(224, 30%, 27%);
+$light_lavender: hsl(241, 100%, 89%);
+
+$bg_gradient: linear-gradient(
+  to bottom,
+  hsl(252, 100%, 67%),
+  hsl(241, 81%, 54%)
+);
+$cl_gradient: linear-gradient(
+  to bottom,
+  hsla(256, 72%, 46%, 1),
+  hsla(241, 72%, 46%, 0)
+);
+
+$red: hsl(0, 100%, 67%);
+$red_bg: #fff6f5;
+$orangey_yellow: hsl(39, 100%, 56%);
+$orangey_yellow_bg: #fffbf2;
+$green_teal: hsl(166, 100%, 37%);
+$green_teal_bg: #f2fafa;
+$coblat_blue: hsl(234, 85%, 45%);
+$coblat_blue_bg: #f3f3fd;
 $off_blue: #3e52a3;
+
 $light_shadow: rgba(0, 0, 0, 0.1);
-$shadow_color: rgba(0, 0, 0, 0.2);
+$shadow: rgba(16, 49, 182, 0.2);
 $darker_shadow: rgba(0, 0, 0, 0.7);
