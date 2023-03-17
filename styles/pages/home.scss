@@ -5,8 +5,12 @@
 
 $border_radius: 30px;
 
-main {
+body {
   height: 100vh;
+}
+
+main {
+  height: calc(100% - 76px);
   @include media("s-mobile") {
     height: auto;
   }
@@ -69,7 +73,7 @@ main {
           color: rgba(255, 255, 255, 0.4);
         }
       }
-      h3 {
+      h2 {
         font-size: $font_size + 13;
       }
       > p {

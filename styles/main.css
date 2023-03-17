@@ -17,8 +17,12 @@ ul {
   list-style: none;
 }
 
-main {
+body {
   height: 100vh;
+}
+
+main {
+  height: calc(100% - 76px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,7 +59,11 @@ main section .summary {
   }
 }
 main section .result {
-  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
   border-radius: 30px;
   color: #fff;
   text-align: center;
@@ -77,7 +85,11 @@ main section .result h1 {
   color: hsl(241, 100%, 89%);
 }
 main section .result .circle {
-  background: linear-gradient(to bottom, hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  background: linear-gradient(
+    to bottom,
+    hsl(256, 72%, 46%),
+    hsla(241, 72%, 46%, 0)
+  );
   width: 180px;
   height: 180px;
   display: flex;
@@ -95,7 +107,7 @@ main section .result .circle span {
   font-weight: 500;
   color: rgba(255, 255, 255, 0.4);
 }
-main section .result h3 {
+main section .result h2 {
   font-size: 31px;
 }
 main section .result > p {
@@ -208,7 +220,11 @@ main section .summary button {
   padding: 15px 5px;
 }
 main section .summary button:hover {
-  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
 }
 
 footer {
@@ -220,4 +236,4 @@ footer {
 
 footer a {
   color: #3e52a3;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

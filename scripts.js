@@ -11,6 +11,7 @@ async function getData() {
     title.setAttribute("class", "title");
     const img = document.createElement("img");
     img.setAttribute("src", `${el.icon}`);
+    img.setAttribute("alt", `${el.category}`);
     title.appendChild(img);
     const titleText = document.createTextNode(`${el.category}`);
     title.appendChild(titleText);
